@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -266,5 +266,25 @@ export default [
         disabled: true,
         bluetoothRequired: true,
         internetConnectionRequired: true
+    },
+    {
+        name: 'EasyML',
+        extensionId: 'easyml',
+        collaborator: 'Me',
+        iconURL: boostIconURL,
+        insetIconURL: boostInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Easy ML."
+                description="easy machine learning"
+                id="gui.extension.easyml.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://scratch.mit.edu/wedo'
+
     }
 ];

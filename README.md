@@ -127,3 +127,20 @@ You can publish the GUI to github.io so that others on the Internet can view it.
 
 ## Donate
 We provide [Scratch](https://scratch.mit.edu) free of charge, and want to keep it that way! Please consider making a [donation](https://secure.donationpay.org/scratchfoundation/) to support our continued engineering, design, community, and resource development efforts. Donations of any size are appreciated. Thank you!
+
+
+## Loading a extension at startup
+
+I've added this line:
+
+    this.props.vm.extensionManager.loadExtensionIdSync('easyml');
+
+to the method `componentDidMount()` of class `GUI` (file container/gui.jsx)
+
+In order yo load extension 'easyml' at startup.
+
+The key where I've found this solution:
+
+https://github.com/SheepTester/scratch-gui/blob/5f1339c007e89ed7e9348a72de2bb60e01628258/src/containers/gui.jsx#L35-L38
+
+thaks to Dale Lane.
