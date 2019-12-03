@@ -53,8 +53,8 @@ class GUI extends React.Component {
         this.setReduxTitle(this.props.projectTitle);
         this.props.onStorageInit(storage);
 
-        this.props.vm.extensionManager.loadExtensionIdSync('text2speech');
-        this.props.vm.extensionManager.loadExtensionIdSync('speech2text');
+        //this.props.vm.extensionManager.loadExtensionIdSync('text2speech');
+        //this.props.vm.extensionManager.loadExtensionIdSync('speech2text');
         this.props.vm.extensionManager.loadExtensionIdSync('easyml');
     }
     componentDidUpdate (prevProps) {
